@@ -1,0 +1,38 @@
+{
+    "name": "ado/formx",
+    "description": "crud widgets for laravel, to make an admin in few lines of code",
+    "keywords": ["laravel", "crud", "formx"],
+    "authors": [
+        {
+            "name": "adu42",
+            "email": "mefiresmith@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "~5.5",
+        "laravelcollective/html": "~5.5",
+        "intervention/image": "2.4.1"
+    },
+    "suggest": {
+        "baum/baum": "Allows to use the DataTree widget"
+    },
+    "autoload": {
+        "classmap": [
+            "migrations"
+        ],
+        "psr-4": {
+            "Ado\\Formx\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ado\\Formx\\FormxServiceProvider"
+            ]
+        },
+        "branch-alias":{
+            "dev-master":"1.0.x-dev"
+        }
+    }
+}
